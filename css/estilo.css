@@ -1,0 +1,188 @@
+/* AUTOR: OMAR HERÁNDEZ REYES */
+
+body {
+	background-image: url('../img/restaurante.jpg');
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#tituloCabecera {
+	background: url('../img/Titulo.png') no-repeat;
+	background-size: 40vh;
+	background-position: center;
+	height: 100px;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+#contenedor {
+	text-align: center;
+}
+
+.botonesColores {
+	border-radius: 30%;	
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+input[type='button'] {
+	margin-right: 30px;
+	margin-bottom: 20px;
+	width: 22px;
+	height: 22px;
+}
+
+input:focus {
+	border: 0;
+	outline: 0;
+}
+
+input[type='radio'] {
+	margin: 0 15px;
+}
+
+input[type='radio']::after {
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	position: relative;
+	top: -5px;
+	visibility: visible;
+	border: 1px solid white;
+	cursor: pointer;
+	/*transition: 0.4s;*/
+}
+
+input#inputColorRojo::after {
+	background-color: #d63c3c;
+	border: 1px solid black;
+}
+
+input#inputColorRojo:checked:after {
+	background: url('../img/iconos/cruz.svg') no-repeat;
+	background-color: #d63c3c;
+	border: 2px solid black;
+}
+
+input#inputColorAzul::after {
+	background-color: #8a9af6;
+	border: 1px solid black;
+}
+
+input#inputColorAzul:checked:after {
+	background: url('../img/iconos/cruz.svg') no-repeat;
+	background-color: #8a9af6;
+	border: 2px solid black;
+}
+
+input#inputColorVerde::after {
+	background-color: #90f27d;
+	border: 1px solid black;
+}
+
+input#inputColorVerde:checked:after {
+	background: url('../img/iconos/cruz.svg') no-repeat;
+	background-color: #90f27d;
+	border: 2px solid black;
+}
+
+input#inputColorAmarillo::after {
+	background-color: #f6f964;
+	border: 1px solid black;
+}
+
+input#inputColorAmarillo:checked:after {
+	background: url('../img/iconos/cruz.svg') no-repeat;
+	background-color: #f6f964;
+	border: 2px solid black;
+}
+
+#inputIngrediente {
+	width: 60%;
+	height: 40px;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	border: 2px solid white;
+	background-color: #e0e1ca;
+	border-radius: 5px;
+}
+
+#inputIngrediente:focus {
+	border: 2px solid #8a9af6;
+	background-color: white;
+}
+
+#contenedorBotones {
+	background: white;
+	width: 35%;
+	margin: 0 auto;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+input.botonesOpciones {
+	margin: 1% 2%;
+	border: none;
+	width: 20px;
+	height: 20px;
+	background-position: center;
+	cursor: pointer;
+}
+
+input#botonAñadir {
+	background: url('../img/iconos/anadir.svg') no-repeat;
+	background-size: 20px;
+}
+
+#botonEliminar {
+	background: url('../img/iconos/cruz.svg') no-repeat;
+	background-size: 20px;
+}
+
+#botonTachar {
+	background: url('../img/iconos/tachado.svg') no-repeat;
+	background-size: 20px;
+}
+
+#botonDestachar {
+	background: url('../img/iconos/letra-s.svg') no-repeat;
+	background-size: 20px;
+}
+
+#botonQuitarSeleccion {
+	background: url('../img/iconos/casilla-en-blanco.svg') no-repeat;
+	background-size: 20px;
+}
+
+#botonSeleccionarTodos {
+	background: url('../img/iconos/casilla-de-verificacion-negra.svg') no-repeat;
+	background-size: 20px;
+}
+
+#botonReordenar {
+	background: url('../img/iconos/flechas.svg') no-repeat;
+	background-size: 20px;
+}
+
+#contenedorPlatos label {
+	font-size: 22px;
+	text-align: left;
+	float: left;
+	margin-left: 17%;
+	margin-bottom: 10px;
+	width: 66%;
+	border-radius: 5px;
+	padding: 7px;
+	text-transform: capitalize;
+}
+
+#contenedorPlatos input {
+	width: 18px;
+	height: 18px;
+	margin-left: 17px;
+	margin-right: 10px;
+}
